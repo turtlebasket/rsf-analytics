@@ -6,19 +6,39 @@
         <title>RSF Analytics</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
     </head>
+
     <body>
         <div class="title-container">
-            <h1> RSF Weight Room Density Analytics </h1>
-            <p><a href="https://github.com/turtlebasket/rsf-analytics">Source Code</a> • Updates every week on Sunday 😋 </p> 
+            <h1> RSF Weight Room Density </h1>
+            <p>
+                <a href="https://github.com/turtlebasket/rsf-analytics">GitHub</a> • 
+                Click images for fullscreen • 
+                Updates every week on Sunday 😋
+            </p> 
             <div class="icon-row"></div>
         </div>
+
         <div class="heatmap-container bottom">
             <h2>2-week data:</h2>
-            <img class="rsf-heatmap" src="/2wk.png">
+            <a href="/2wk.png" target="_blank"><img class="rsf-heatmap" src="/2wk.png"></a>
             <h2>1-month data:</h2>
-            <img class="rsf-heatmap" src="/1mo.png">
+            <a href="/1mo.png" target="_blank"><img class="rsf-heatmap" src="/1mo.png"></a>
             <h2>1-year data:</h2>
-            <img class="rsf-heatmap" src="/1yr.png">
+            <a href="/1yr.png" target="_blank"><img class="rsf-heatmap" src="/1yr.png"></a>
         </div>
+
+        <script>
+            (function(f, a, t, h, o, m){
+                a[h]=a[h]||function(){
+                    (a[h].q=a[h].q||[]).push(arguments)
+                };
+                o=f.createElement('script'),
+                m=f.getElementsByTagName('script')[0];
+                o.async=1; o.src=t; o.id='fathom-script';
+                m.parentNode.insertBefore(o,m)
+            })(document, window, '//analytics.michaellisano.com/tracker.js', 'fathom');
+            fathom('set', 'siteId', 'NPNMX');
+            fathom('trackPageview');
+        </script>
     </body>
 </html>

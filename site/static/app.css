@@ -1,9 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 
 h1, h2, p, div {
     font-family: 'Inter', sans-serif;
+    text-align: center;
     /* margin-top:6px;
     margin-bottom: 6px; */
+}
+
+a {
+    color: black;
+    font-weight: 500;
 }
 
 body {
@@ -25,7 +31,13 @@ body {
 }
 
 .rsf-heatmap {
-    max-width: 60rem;
+    width: 60rem;
+}
+
+@media screen and (max-width: 35rem) {
+    .rsf-heatmap {
+        width: 100%;
+    }
 }
 
 .bottom {
