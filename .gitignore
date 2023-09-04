@@ -3,6 +3,7 @@
 *.csv
 *.png
 !img/demo.png
+!site/static/favicon.png
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

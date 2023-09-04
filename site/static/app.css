@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+h1, h2, p, div {
+    font-family: 'Inter', sans-serif;
+    /* margin-top:6px;
+    margin-bottom: 6px; */
+}
+
+body {
+    align-items: center;
+}
+
+.title-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heatmap-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rsf-heatmap {
+    max-width: 60rem;
+}
+
+.bottom {
+    margin-bottom: 8rem;
+}

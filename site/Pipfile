@@ -9,6 +9,7 @@ requests = "*"
 fastapi = "*"
 apscheduler = "*"
 python-dotenv = "*"
+hypercorn = "*"
 
 [dev-packages]
 
