@@ -1,0 +1,8 @@
+.dockerignore
+.git
+.gitignore
+Pipfile
+Pipfile.lock
+.DS_Store
+.env
+example.env
