@@ -7,3 +7,6 @@ Pipfile.lock
 .env
 example.env
 Makefile
+docker-compose.example.yaml
+static/*.png
+!static/favicon.png
