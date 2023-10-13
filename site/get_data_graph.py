@@ -1,4 +1,5 @@
 import datetime
+from typing import List, Tuple
 import requests
 from enum import Enum
 import matplotlib.pyplot as plt
@@ -46,13 +47,19 @@ def get_historical_data(start, end, interval):
 
 data = [[] for i in range(0, 7)]
 
-end = datetime.datetime.now()
-deltas = [
-    # (end - datetime.timedelta(weeks=1), "1wk"),
-    (end - datetime.timedelta(weeks=2), "2wk"),
-    (end - datetime.timedelta(days=30), "1mo"),
-    (end - datetime.timedelta(days=365), "1yr"),
-]
+deltas: List[Tuple[datetime.datetime, str]]
+end: datetime.datetime
+
+
+def update_global_times():
+    global end, deltas
+    end = datetime.datetime.now()
+    deltas = [
+        # (end - datetime.timedelta(weeks=1), "1wk"),
+        (end - datetime.timedelta(weeks=2), "2wk"),
+        (end - datetime.timedelta(days=30), "1mo"),
+        (end - datetime.timedelta(days=365), "1yr"),
+    ]
 
 
 def get_data_graphs():

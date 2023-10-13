@@ -1,7 +1,7 @@
 from fastapi import FastAPI, HTTPException, Request, status
 from fastapi.staticfiles import StaticFiles
 from apscheduler.schedulers.background import BackgroundScheduler
-from get_data_graph import get_data_graphs
+from get_data_graph import get_data_graphs, update_global_times
 import config
 
 scheduler = BackgroundScheduler()
@@ -18,6 +18,7 @@ def verify_admin_key(req: Request):
 @app.post("/admin/run")
 async def force_run(req: Request):
     verify_admin_key(req)
+    update_global_times()
     get_data_graphs()
     return {"info": "Done"}
 
