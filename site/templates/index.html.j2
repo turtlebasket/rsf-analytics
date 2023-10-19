@@ -36,8 +36,8 @@
                 m=f.getElementsByTagName('script')[0];
                 o.async=1; o.src=t; o.id='fathom-script';
                 m.parentNode.insertBefore(o,m)
-            })(document, window, '//analytics.michaellisano.com/tracker.js', 'fathom');
-            fathom('set', 'siteId', 'NPNMX');
+            })(document, window, '//{{ fathom_host }}/tracker.js', 'fathom');
+            fathom('set', 'siteId', '{{ fathom_site_id }}');
             fathom('trackPageview');
         </script>
     </body>
