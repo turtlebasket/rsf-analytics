@@ -24,6 +24,7 @@ Build container:
 
 ```bash
 CONTAINER_NAME=ghcr.io/turtlebasket/rsf-analytics
+poetry export > requirements.txt
 docker build . -t $CONTAINER_NAME
 ```
 
